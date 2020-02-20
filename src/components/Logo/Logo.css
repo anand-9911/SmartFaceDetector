@@ -1,0 +1,7 @@
+.Tilt{
+  background: rgb(49,147,181);
+background: linear-gradient(90deg, rgba(49,147,181,1) 0%, rgba(92,111,180,1) 33%, rgba(87,83,112,1) 81%);
+    }
+.Tilt-inner{
+    padding-top: 5px;
+}
