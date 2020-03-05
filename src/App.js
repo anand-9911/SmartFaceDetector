@@ -10,7 +10,7 @@ import Register from './components/Register/Register';
 
 import './App.css';
 
-// import Particles from 'react-particles-js';
+import Particles from 'react-particles-js';
 import Clarifai from 'clarifai';
 
 const app = new Clarifai.App({
@@ -18,25 +18,25 @@ const app = new Clarifai.App({
 });
 
 
-// const particlesOptions = {
-//   "particles": {
-//     "number": {
-//       "value": 200
-//     },
-//     "size": {
-//       "value": 3
-//     }
-//   },
-//   "interactivity": {
-//     "events": {
-//       "onhover": {
-//         "enable": true,
-//         "mode": "repulse",
-//         "color": "#00000"
-//       }
-//     }
-//   }
-// }
+const particlesOptions = {
+  "particles": {
+    "number": {
+      "value": 200
+    },
+    "size": {
+      "value": 3
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse",
+        "color": "#00000"
+      }
+    }
+  }
+}
 
 class App extends Component {
   constructor() {
@@ -150,10 +150,10 @@ class App extends Component {
     const { isSignedIn, imageUrl, route, box } = this.state;
     return (
       <div className="App">
-        {/* 
+        
         <Particles className='particle'
           params={particlesOptions}
-        /> */}
+        />
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
         {
           route === 'home'
